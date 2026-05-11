@@ -38,7 +38,7 @@ const getRandomClass = () => {
 };
 ---
 
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <BaseHead title={title} description={description} />
   </head>
@@ -73,7 +73,7 @@ const getRandomClass = () => {
               {
                 updatedDate && (
                   <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
+                    最后更新于 <FormattedDate date={updatedDate} />
                   </div>
                 )
               }
@@ -88,7 +88,7 @@ const getRandomClass = () => {
             </div>
             <div class="flex flex-col gap-6" transition:animate="slide">
               <ul class="flex flex-col gap-2 pt-10 md:pt-0 items-start md:items-end">
-                <p class="md:hidden font-semibold">Related:</p>
+                <p class="md:hidden font-semibold">相关文章：</p>
                 {
                   posts.map((post) => {
                     return (
@@ -105,7 +105,7 @@ const getRandomClass = () => {
                 }
               </ul>
               <hr />
-              <p>Written by</p>
+              <p>作者</p>
               <div class="flex -mt-4 gap-2">
                   <div class="bg-pgreen rounded-full w-12 h-12 aspect-square object-contain overflow-hidden ">
                     <Picture src={images["/src/assets/hero.webp"]()} alt="Fran"  format="webp"
@@ -113,19 +113,19 @@ const getRandomClass = () => {
             widths={[84, 101]}/>/>
                   </div>
                   <div>
-                  <h3>Joaquín Sorolla</h3>
-                  <p class="text-pblack">UX UI designer based<br>in Steve Jobs</p>
+                  <h3>华金·索罗亚</h3>
+                  <p class="text-pblack">UX UI 设计师</p>
                 </div>
               </div>
               <hr/>
               <div>
-                <p>Contributors:</p>
+                <p>贡献者：</p>
                 <div class="flex items-center gap-6 text-xl">
                   <a
                     href="https://jramma.com"
                     target="_blank"
                     class="py-1 pl-3 rounded-md border-1 border-black bg-ppink shadow-card hover:shadow-hover transition"
-                    aria-label="Personal Website"
+                    aria-label="个人网站"
                   >
                     <Icon name="web" />
                   </a>
@@ -133,7 +133,7 @@ const getRandomClass = () => {
                     href="https://github.com/jramma"
                     target="_blank"
                     class="border-1 p-1 border-black rounded-full bg-pblue shadow-card hover:shadow-hover transition"
-                    aria-label="GitHub Profile"
+                    aria-label="GitHub 主页"
                     >
                     <Icon name="github" />
                   </a>
@@ -141,7 +141,7 @@ const getRandomClass = () => {
                     href="https://www.linkedin.com/in/jramma/"
                     target="_blank"
                     class="border-1 p-1 border-black rounded-full bg-pgreen shadow-card hover:shadow-hover transition"
-                    aria-label="LinkedIn Profile"
+                    aria-label="LinkedIn 主页"
                   >
                     <Icon name="linkedin" />
                   </a>

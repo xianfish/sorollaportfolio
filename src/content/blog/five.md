@@ -1,51 +1,50 @@
 ---
-title: "Markdown example"
+title: "Markdown 示例"
 description:
-  'Foto de <a class="underline" href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adrianna Geo</a> en <a href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline">Unsplash</a>
+  '摄影：<a class="underline" href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adrianna Geo</a> 来自 <a href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="underline">Unsplash</a>
   '
 icon: "1"
 pubDate: "Jul 08 2022"
 heroImage: "/src/assets/adriana.webp"
 ---
 
-This example is from https://markdown-it.github.io/
+此示例来自 https://markdown-it.github.io/
 
 ---
 
-**Advertisement :)**
+**广告 :)**
 
-- **[pica](https://nodeca.github.io/pica/demo/)** - high quality and fast image
-  resize in browser.
-- **[babelfish](https://github.com/nodeca/babelfish/)** - developer friendly
-  i18n with plurals support and easy syntax.
+- **[pica](https://nodeca.github.io/pica/demo/)** - 浏览器端高质量快速图片缩放。
+- **[babelfish](https://github.com/nodeca/babelfish/)** - 开发者友好的
+  i18n 方案，支持复数形式和简洁语法。
 
-You will like those projects!
-
----
-
-# h1 Heading 8-)
-
-## h2 Heading
-
-### h3 Heading
-
-#### h4 Heading
-
-##### h5 Heading
-
-###### h6 Heading
-
-## Horizontal Rules
+你会喜欢这些项目的！
 
 ---
+
+# h1 标题 8-)
+
+## h2 标题
+
+### h3 标题
+
+#### h4 标题
+
+##### h5 标题
+
+###### h6 标题
+
+## 水平分割线
 
 ---
 
 ---
 
-## Typographic replacements
+---
 
-Enable typographer option to see result.
+## 排版替换
+
+启用 typographer 选项查看效果。
 
 (c) (C) (r) (R) (tm) (TM) (p) (P) +-
 
@@ -53,72 +52,72 @@ test.. test... test..... test?..... test!....
 
 !!!!!! ???? ,, -- ---
 
-"Smartypants, double quotes" and 'single quotes'
+"智能引号，双引号" 和 '单引号'
 
-## Emphasis
+## 强调
 
-**This is bold text**
+**这是粗体文本**
 
-**This is bold text**
+**这是粗体文本**
 
-_This is italic text_
+_这是斜体文本_
 
-_This is italic text_
+_这是斜体文本_
 
-~~Strikethrough~~
+~~删除线~~
 
-## Blockquotes
+## 引用
 
-> Blockquotes can also be nested...
+> 引用也可以嵌套...
 >
-> > ...by using additional greater-than signs right next to each other...
+> > ...通过使用额外的 > 符号紧挨在一起...
 > >
-> > > ...or with spaces between arrows.
+> > > ...或者用空格分隔箭头。
 
-## Lists
+## 列表
 
-Unordered
+无序列表
 
-- Create a list by starting a line with `+`, `-`, or `*`
-- Sub-lists are made by indenting 2 spaces:
-  - Marker character change forces new list start:
+- 以 `+`、`-` 或 `*` 开头创建列表
+- 子列表通过缩进 2 个空格实现：
+  - 改变标记符号会强制开始新列表：
     - Ac tristique libero volutpat at
     * Facilisis in pretium nisl aliquet
     - Nulla volutpat aliquam velit
-- Very easy!
+- 非常简单！
 
-Ordered
+有序列表
 
 1. Lorem ipsum dolor sit amet
 2. Consectetur adipiscing elit
 3. Integer molestie lorem at massa
 
-4. You can use sequential numbers...
-5. ...or keep all the numbers as `1.`
+4. 你可以使用顺序编号...
+5. ...或者所有编号都用 `1.`
 
-Start numbering with offset:
+从指定序号开始：
 
 57. foo
 1. bar
 
-## Code
+## 代码
 
-Inline `code`
+行内 `代码`
 
-Indented code
+缩进代码
 
-    // Some comments
+    // 一些注释
     line 1 of code
     line 2 of code
     line 3 of code
 
-Block code "fences"
+代码块
 
 ```
-Sample text here...
+示例文本在此...
 ```
 
-Syntax highlighting
+语法高亮
 
 ```js
 var foo = function (bar) {
@@ -128,119 +127,119 @@ var foo = function (bar) {
 console.log(foo(5));
 ```
 
-## Tables
+## 表格
 
-| Option | Description                                                               |
-| ------ | ------------------------------------------------------------------------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default.    |
-| ext    | extension to be used for dest files.                                      |
+| 选项   | 描述                                                                     |
+| ------ | ------------------------------------------------------------------------ |
+| data   | 数据文件路径，用于提供传递给模板的数据。                                   |
+| engine | 用于处理模板的引擎。默认使用 Handlebars。                                 |
+| ext    | 用于目标文件的扩展名。                                                    |
 
-Right aligned columns
+右对齐列
 
-| Option |                                                               Description |
-| -----: | ------------------------------------------------------------------------: |
-|   data | path to data files to supply the data that will be passed into templates. |
-| engine |    engine to be used for processing templates. Handlebars is the default. |
-|    ext |                                      extension to be used for dest files. |
+| 选项   |                                                                     描述 |
+| -----: | -----------------------------------------------------------------------: |
+|   data | 数据文件路径，用于提供传递给模板的数据。                                   |
+| engine |    用于处理模板的引擎。默认使用 Handlebars。                               |
+|    ext |                                      用于目标文件的扩展名。                |
 
-## Links
+## 链接
 
-[link text](http://dev.nodeca.com)
+[链接文本](http://dev.nodeca.com)
 
-[link with title](http://nodeca.github.io/pica/demo/ "title text!")
+[带标题的链接](http://nodeca.github.io/pica/demo/ "标题文本！")
 
-Autoconverted link https://github.com/nodeca/pica (enable linkify to see)
+自动转换链接 https://github.com/nodeca/pica （启用 linkify 查看）
 
-## Images
+## 图片
 
 ![Minion](https://octodex.github.com/images/minion.png)
 ![Stormtroopocat](https://octodex.github.com/images/stormtroopocat.jpg "The Stormtroopocat")
 
-Like links, Images also have a footnote style syntax
+与链接一样，图片也支持脚注语法
 
 ![Alt text][id]
 
-With a reference later in the document defining the URL location:
+稍后在文档中定义 URL 位置：
 
 [id]: https://octodex.github.com/images/dojocat.jpg "The Dojocat"
 
-## Plugins
+## 插件
 
-The killer feature of `markdown-it` is very effective support of
-[syntax plugins](https://www.npmjs.org/browse/keyword/markdown-it-plugin).
+`markdown-it` 的杀手级功能是对
+[语法插件](https://www.npmjs.org/browse/keyword/markdown-it-plugin) 的强大支持。
 
-### [Emojies](https://github.com/markdown-it/markdown-it-emoji)
+### [表情](https://github.com/markdown-it/markdown-it-emoji)
 
-> Classic markup: :wink: :cry: :laughing: :yum:
+> 经典标记：:wink: :cry: :laughing: :yum:
 >
-> Shortcuts (emoticons): :-) :-( 8-) ;)
+> 快捷方式（颜文字）：:-) :-( 8-) ;)
 
-see [how to change output](https://github.com/markdown-it/markdown-it-emoji#change-output) with twemoji.
+参见 [如何更改输出](https://github.com/markdown-it/markdown-it-emoji#change-output) 使用 twemoji。
 
-### [Subscript](https://github.com/markdown-it/markdown-it-sub) / [Superscript](https://github.com/markdown-it/markdown-it-sup)
+### [下标](https://github.com/markdown-it/markdown-it-sub) / [上标](https://github.com/markdown-it/markdown-it-sup)
 
 - 19^th^
 - H~2~O
 
 ### [\<ins>](https://github.com/markdown-it/markdown-it-ins)
 
-++Inserted text++
+++插入文本++
 
 ### [\<mark>](https://github.com/markdown-it/markdown-it-mark)
 
-==Marked text==
+==标记文本==
 
-### [Footnotes](https://github.com/markdown-it/markdown-it-footnote)
+### [脚注](https://github.com/markdown-it/markdown-it-footnote)
 
-Footnote 1 link[^first].
+脚注 1 链接[^first]。
 
-Footnote 2 link[^second].
+脚注 2 链接[^second]。
 
-Inline footnote^[Text of inline footnote] definition.
+行内脚注^[行内脚注文本] 定义。
 
-Duplicated footnote reference[^second].
+重复脚注引用[^second]。
 
-[^first]: Footnote **can have markup**
+[^first]: 脚注 **可以包含标记**
 
-    and multiple paragraphs.
+    以及多个段落。
 
-[^second]: Footnote text.
+[^second]: 脚注文本。
 
-### [Definition lists](https://github.com/markdown-it/markdown-it-deflist)
+### [定义列表](https://github.com/markdown-it/markdown-it-deflist)
 
-Term 1
+术语 1
 
-: Definition 1
-with lazy continuation.
+: 定义 1
+带延迟续行。
 
-Term 2 with _inline markup_
+术语 2 带 _行内标记_
 
-: Definition 2
+: 定义 2
 
-        { some code, part of Definition 2 }
+        { 一些代码，属于定义 2 }
 
-    Third paragraph of definition 2.
+    定义 2 的第三段。
 
-_Compact style:_
+_紧凑风格：_
 
-Term 1
-~ Definition 1
+术语 1
+~ 定义 1
 
-Term 2
-~ Definition 2a
-~ Definition 2b
+术语 2
+~ 定义 2a
+~ 定义 2b
 
-### [Abbreviations](https://github.com/markdown-it/markdown-it-abbr)
+### [缩写](https://github.com/markdown-it/markdown-it-abbr)
 
-This is HTML abbreviation example.
+这是一个 HTML 缩写示例。
 
-It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
+它会转换 "HTML"，但保持部分匹配如 "xxxHTMLyyy" 等不变。
 
-\*[HTML]: Hyper Text Markup Language
+\*[HTML]: 超文本标记语言
 
-### [Custom containers](https://github.com/markdown-it/markdown-it-container)
+### [自定义容器](https://github.com/markdown-it/markdown-it-container)
 
 ::: warning
-_here be dragons_
+_这里有龙_
 :::

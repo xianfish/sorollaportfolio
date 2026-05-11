@@ -1,7 +1,7 @@
 ---
-title: "Ultimate enlightenment"
+title: "终极觉悟"
 description:
-  'Foto de <a class="underline" href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Adrianna Geo</a> en <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  '摄影：<a class="underline" href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" >Adrianna Geo</a> 来自 <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   '
 icon: "1"
 pubDate: "Jul 08 2022"

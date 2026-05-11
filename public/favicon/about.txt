@@ -1,6 +1,6 @@
-This favicon was generated using the following graphics from Twitter Twemoji:
+此网站图标使用以下来自 Twitter Twemoji 的图形生成：
 
-- Graphics Title: 1f530.svg
-- Graphics Author: Copyright 2020 Twitter, Inc and other contributors (https://github.com/twitter/twemoji)
-- Graphics Source: https://github.com/twitter/twemoji/blob/master/assets/svg/1f530.svg
-- Graphics License: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)
+- 图形标题：1f530.svg
+- 图形作者：Copyright 2020 Twitter, Inc 及其他贡献者 (https://github.com/twitter/twemoji)
+- 图形来源：https://github.com/twitter/twemoji/blob/master/assets/svg/1f530.svg
+- 图形许可：CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/)

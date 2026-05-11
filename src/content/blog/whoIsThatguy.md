@@ -1,26 +1,24 @@
 ---
-title: "Who is that guy"
+title: "那个人是谁"
 description:
-  'Foto de <a class="underline" href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adrianna Geo</a> en <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+  '摄影：<a class="underline" href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adrianna Geo</a> 来自 <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
   '
 icon: "3"
 pubDate: "Jun 19 2024"
 heroImage: "/src/assets/adriana.webp"
 ---
 
-# Title 1
-## Title 3
+# 标题 1
+## 标题 3
 
-Who is that guy. It's uh, the other end of town, a block past Maple. Excuse me. I think I know exactly what you mean. Of course not, Biff, now I wouldn't want that to happen. Now, uh, I'll finish those reports up tonight, and I'll run em them on over first thing tomorrow, alright?
+那个人是谁。呃，在城的另一边，过了枫树街一个街区。对不起，我想我完全明白你的意思。当然不是，毕夫，我不希望那种事发生。呃，我今晚会完成那些报告，明天一早就送到你那边，好吗？
 
-## Title 2
+## 标题 2
 
+你知道吗，博士，你的设备整个星期都没关。什么，现在就在这里，在餐厅里？如果她拒绝了呢？我不知道我能不能承受那样的拒绝。再说，我觉得她更愿意和别人一起去。哇，哇，孩子，孩子，停，停，停，停。什么，我不知道发生了什么。在哪？
 
-You know, Doc, you left your equipment on all week. What, right here right now in the cafeteria? What if she said no? I don't know if I could take that kind of rejection. Besides, I think she'd rather go with somebody else. Whoa, whoa, kid, kid, stop, stop, stop, stop. What, I don't get what happened. Where?
+马蒂，我们还能再见到你吗？不，等等，博士，你头上的伤，你头上的伤，我知道是怎么来的，你把整个故事都告诉我了。你站在马桶上挂钟，然后摔倒了，头撞到了洗手池，就在那时你想出了通量电容器的创意，这使得时间旅行成为可能。来吧，伙计，我们来做点真正酷的事情。喂，喂，有人在家吗？想想，麦克弗莱，想想。我得有时间重新抄写一遍。你知不知道如果我把你用笔迹写的作业交上去会怎样？我会被学校开除的。你不想那样的事发生，对吧，对吧？没错。
 
+嗯，是的，我这就过去。爸，怎么了？怎么了，爸？他没事。我们家的第一台电视机，爸爸今天刚买回来。你有电视机吗？它已经变异成人形了，开枪打它。
 
-Marty, will we ever see you again? No wait, Doc, the bruise, the bruise on your head, I know how that happened, you told me the whole story. you were standing on your toilet and you were hanging a clock, and you fell, and you hit your head on the sink, and that's when you came up with the idea for the flux capacitor, which makes time travel possible. C'mon man, let's do something that really cooks. Hello, hello, anybody home? Think, McFly, think. I gotta have time to recopy it. Do your realize what would happen if I hand in my homework in your handwriting? I'd get kicked out of school. You wouldn't want that to happen would you, would you? Right.
-
-Um, yeah, I'm on my way. Pa, what is it? What is it, Pa? He's alright. Our first television set, Dad just picked it up today. Do you have a television? It's already mutated into human form, shoot it.
-
-What's going on? Where have you been all week? Look at the time, you've got less than 4 minutes, please hurry. Well, aren't you going up to the lake tonight, you've been planning it for two weeks. Huh? Well yeah, you know we have two of them.
+怎么了？你这一个星期去哪了？看看时间，你只有不到 4 分钟了，请快点。呃，你今晚不是要去湖边吗？你都已经计划了两周了。啊？嗯对，你知道我们有两台。

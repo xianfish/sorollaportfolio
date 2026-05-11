@@ -1,6 +1,6 @@
 ---
-title: 'Overcome enlightenment'
-description: 'Foto de <a class="underline"  href="https://unsplash.com/es/fotos/flores-rojas-azules-y-blancas-5TK1F5VfdIk">Europeana </a> en <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+title: '超越觉悟'
+description: '摄影：<a class="underline"  href="https://unsplash.com/es/fotos/flores-rojas-azules-y-blancas-5TK1F5VfdIk">Europeana</a> 来自 <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       '
 icon: '3'
 pubDate: 'Jul 08 2022'

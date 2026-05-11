@@ -1,7 +1,7 @@
 ---
-title: "Free revaluation"
+title: "自由重估"
 description:
-  'Foto de <a class="underline"href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adrianna Geo</a> en <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="text-pgreen">Unsplash</a>
+  '摄影：<a class="underline"href="https://unsplash.com/es/@adrigeo_?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Adrianna Geo</a> 来自 <a class="underline" href="https://unsplash.com/es/fotos/una-pintura-en-el-techo-de-un-edificio-1rBg5YSi00c?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" class="text-pgreen">Unsplash</a>
   '
 icon: "2"
 pubDate: "Jul 22 2022"

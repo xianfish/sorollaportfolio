@@ -1,25 +1,25 @@
-# Sorolla Portfolio
+# 索罗亚作品集
 
 ![./preview.png](./preview.png)
 
-Welcome to my personal portfolio demo repository! This project is a demonstration of what a personal portfolio could look like. It showcases various aspects of web development, including my work, skills, and projects.
+欢迎来到我的个人作品集演示仓库！这个项目展示了个人作品集网站的一个示例，涵盖了我的作品、技能和项目等 Web 开发的各个方面。
 
-- You can view the deployed project at the following URL: [https://sorolla.netlify.app/](https://sorolla.netlify.app/)
-- Astro web templates: <https://astro.build/themes/details/sorollaportfolio/>
+- 已部署项目地址：[https://sorolla.netlify.app/](https://sorolla.netlify.app/)
+- Astro 网页模板：<https://astro.build/themes/details/sorollaportfolio/>
 
-## 📂 Project Structure
+## 📂 项目结构
 
-- **public/**: Contains public assets like images and fonts.
-- **src/**: Includes the source code for the portfolio.
-- **.gitignore**: Specifies files and directories to be ignored by Git.
-- **astro.config.mjs**: Configuration file for Astro.
-- **package.json**: Lists project dependencies and scripts.
-- **tailwind.config.mjs**: Configuration file for Tailwind CSS.
-- **tsconfig.json**: TypeScript configuration file.
+- **public/**：包含公共资源，如图片和字体。
+- **src/**：包含作品集的源代码。
+- **.gitignore**：指定 Git 忽略的文件和目录。
+- **astro.config.mjs**：Astro 配置文件。
+- **package.json**：列出项目依赖和脚本。
+- **tailwind.config.mjs**：Tailwind CSS 配置文件。
+- **tsconfig.json**：TypeScript 配置文件。
 
-### 🧭 /src structure
+### 🧭 /src 目录结构
 
-The `/src` directory contains the main source code for the project. Below is an overview of its structure:
+`/src` 目录包含项目的主要源代码。以下是其结构概览：
 
 ```bash
 src
@@ -39,7 +39,7 @@ src
 ├── consts.ts
 ├── content
 │   └── blog
-│       └── content in markdown format
+│       └── Markdown 格式的内容
 ├── content.config.ts
 ├── icons
 │   ├── 1.svg
@@ -66,55 +66,55 @@ src
     └── hamburgers.css
 ```
 
-#### Explanation
+#### 说明
 
-- **assets**: Contains image files used in the project.
-- **components**: Contains reusable UI components built with Astro.
-- **content**: Contains blog content in Markdown format.
-- **content.config.ts**: Configuration file for content collections.
-- **icons**: Contains SVG icon files used in the project.
-- **layouts**: Contains layout components.
-  - `BlogPost.astro`: Layout component for blog posts.
-- **pages**: Contains the main pages of the site.
-  - `blog/index.astro`: Blog index page.
-  - `blog/[...slug].astro`: Dynamic route for individual blog posts.
-- **styles**: Contains global and component-specific CSS files.
-  - `global.css`: Global styles for the project.
-  - `hamburgers.css`: Styles for the hamburger menu.
+- **assets**：包含项目中使用的图片文件。
+- **components**：包含使用 Astro 构建的可复用 UI 组件。
+- **content**：包含 Markdown 格式的博客内容。
+- **content.config.ts**：内容集合的配置文件。
+- **icons**：包含项目中使用的 SVG 图标文件。
+- **layouts**：包含布局组件。
+  - `BlogPost.astro`：博客文章的布局组件。
+- **pages**：包含网站的主要页面。
+  - `blog/index.astro`：博客列表页。
+  - `blog/[...slug].astro`：单篇博客文章的动态路由。
+- **styles**：包含全局和组件级别的 CSS 文件。
+  - `global.css`：项目的全局样式。
+  - `hamburgers.css`：汉堡菜单的样式。
 
-This structure helps in organizing the project files and makes it easier to maintain and scale the project.
+这种结构有助于组织项目文件，使项目更易于维护和扩展。
 
-## 🚀 Getting Started
+## 🚀 快速开始
 
-To run this project locally:
+在本地运行此项目：
 
-1. **Clone the repository:**
+1. **克隆仓库：**
 
    ```bash
    git clone https://github.com/jramma/sorollaportfolio.git
    cd sorollaportfolio
    ```
 
-2. **Install dependencies:**
+2. **安装依赖：**
 
    ```bash
    pnpm install
    ```
 
-3. **Start the development server:**
+3. **启动开发服务器：**
 
    ```bash
    pnpm run dev
    ```
 
-   The application will be available at `http://localhost:4321`.
+   应用将在 `http://localhost:4321` 可用。
 
-## 🛠️ Technologies Used
+## 🛠️ 技术栈
 
-- **Astro**: A modern static site builder.
-- **Tailwind CSS**: A utility-first CSS framework.
-- **TypeScript**: A statically typed programming language.
+- **Astro**：现代静态网站构建工具。
+- **Tailwind CSS**：实用优先的 CSS 框架。
+- **TypeScript**：静态类型的编程语言。
 
-## 📄 License
+## 📄 许可证
 
-This project is licensed under the [MIT License](LICENSE).
+本项目基于 [MIT 许可证](LICENSE) 授权。
