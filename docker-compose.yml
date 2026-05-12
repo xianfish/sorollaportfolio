@@ -1,0 +1,31 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        SITE_URL: ${SITE_URL:-http://localhost}
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./deploy/config.prod.yml:/usr/share/nginx/html/admin/config.yml:ro
+    depends_on:
+      - cms
+    restart: unless-stopped
+
+  cms:
+    build:
+      context: .
+      dockerfile: Dockerfile.cms
+    volumes:
+      - ./.git:/repo/.git:rw
+      - ./src:/repo/src:rw
+      - ./public:/repo/public:rw
+    environment:
+      - GIT_AUTHOR_NAME=${GIT_USER:-CMS Editor}
+      - GIT_AUTHOR_EMAIL=${GIT_EMAIL:-cms@example.com}
+      - GIT_COMMITTER_NAME=${GIT_USER:-CMS Editor}
+      - GIT_COMMITTER_EMAIL=${GIT_EMAIL:-cms@example.com}
+    working_dir: /repo
+    restart: unless-stopped

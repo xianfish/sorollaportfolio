@@ -1,0 +1,6 @@
+FROM node:22-alpine
+RUN apk add --no-cache git openssh-client && \
+    npm install -g decap-server
+WORKDIR /repo
+EXPOSE 8081
+CMD ["decap-server"]
