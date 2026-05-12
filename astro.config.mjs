@@ -6,14 +6,13 @@ import tailwindcss from "@tailwindcss/vite";
 
 import icon from "astro-icon";
 
-import netlify from "@astrojs/netlify";
+const SITE_URL = process.env.SITE_URL || "http://localhost:4321";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://sorolla.netlify.app/",
+  site: SITE_URL,
   output: 'static',
   integrations: [mdx(), sitemap(), icon()],
-  adapter: netlify(),
   vite: {
     plugins: [tailwindcss()],
   },
