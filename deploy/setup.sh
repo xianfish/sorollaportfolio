@@ -29,8 +29,8 @@ echo ""
 echo "=== 3. 配置环境变量 ==="
 cat > "$PROJECT_DIR/.env" <<EOF
 SITE_URL=http://$IP
-GIT_USER=Mayun Babamama
-GIT_EMAIL=15267679353qq@gmail.com
+GIT_USER=mayunbabamama
+GIT_EMAIL=zchaolong20210907@163.com
 EOF
 echo ".env 文件已创建:"
 cat "$PROJECT_DIR/.env"
