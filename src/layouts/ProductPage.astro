@@ -1,0 +1,193 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "@/components/BaseHead.astro";
+import Header from "@/components/Header.astro";
+import Footer from "@/components/Footer.astro";
+import FormattedDate from "@/components/FormattedDate.astro";
+import { Icon } from "astro-icon/components";
+
+type Props = CollectionEntry<"products">["data"];
+
+const {
+  title = "",
+  description,
+  category,
+  pubDate,
+  heroImage = "/src/assets/hero.webp",
+  gallery = [],
+  features = [],
+  specs = [],
+  link,
+} = Astro.props;
+
+import type { ImageMetadata } from 'astro';
+import { Picture } from "astro:assets";
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{webp,jpeg,jpg,png,gif}')
+
+const heroImg = images[heroImage]
+  ? images[heroImage]()
+  : images["/src/assets/hero.webp"]();
+
+const galleryImgs = gallery
+  .map(g => typeof g === 'string' ? g : g.image)
+  .filter(g => images[g])
+  .map(g => images[g]());
+
+const bgClasses = [
+  "bg-ppink",
+  "bg-pgreen",
+  "bg-pblue",
+  "bg-pyellow",
+];
+const shadowClasses = [
+  "hover:shadow-ppinkHover",
+  "hover:shadow-pgreenHover",
+  "hover:shadow-pblueHover",
+  "hover:shadow-pyellow",
+];
+
+const getRandomBg = () => bgClasses[Math.floor(Math.random() * bgClasses.length)];
+const getRandomShadow = () => shadowClasses[Math.floor(Math.random() * shadowClasses.length)];
+---
+
+<html lang="zh-CN">
+  <head>
+    <BaseHead title={title} description={description} />
+  </head>
+  <body>
+    <Header />
+    <main class="container mx-auto md:px-10 text-white">
+      <!-- Hero -->
+      <div class="relative mb-12" transition:animate="fade">
+        <span class="bg-black/30 w-full h-full absolute"></span>
+        <div class="absolute bottom-10 md:left-20 left-6 z-10">
+          <p class="text-sm uppercase tracking-wider mb-2 bg-ppink inline-block px-3 py-1 rounded-md border-1 border-black shadow-card1">
+            {category}
+          </p>
+          <h1 class="text-4xl md:text-8xl font-bold text-shadow leading-tight">
+            <span class="font-kablamo text-ppink">{title.charAt(0)}</span>{title.slice(1)}
+          </h1>
+        </div>
+        <Picture
+          fetchpriority="high"
+          loading="eager"
+          src={heroImg}
+          alt={title}
+          class="h-96 md:h-[32rem] w-full object-cover"
+          quality={80}
+          format="webp"
+          sizes="(max-width: 901px) 100vw, 1200px"
+          widths={[480, 700, 901, 1200]}
+        />
+      </div>
+
+      <div class="text-black px-6 md:px-0">
+        <!-- Meta bar -->
+        <div class="text-sm text-pblack flex items-center justify-between mb-10">
+          <FormattedDate date={pubDate} />
+          <span>{category}</span>
+        </div>
+
+        <!-- Description -->
+        <div class="prose max-w-3xl mb-20">
+          <p class="text-xl leading-relaxed" set:html={description.replace(/\n/g, '<br>')} />
+        </div>
+
+        <!-- Markdown body content -->
+        <div class="prose max-w-3xl mb-20">
+          <slot />
+        </div>
+
+        <!-- Features grid -->
+        {
+          features.length > 0 && (
+            <section class="mb-20">
+              <h2 class="text-3xl font-bold mb-10">
+                <span class="font-kablamo text-ppink">F</span>eatures
+              </h2>
+              <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {features.map((feature) => {
+                  const bg = getRandomBg();
+                  const shadow = getRandomShadow();
+                  return (
+                    <div class={`rounded-3xl border-1 border-black shadow-card group ${shadow} transition p-6 flex flex-col gap-3`}>
+                      <div class={`${bg} text-3xl p-3 self-start rounded-xl border-1 border-black shadow-card1`}>
+                        <Icon name={feature.icon} />
+                      </div>
+                      <h3 class="text-lg font-semibold">{feature.title}</h3>
+                      <p class="text-pblack text-sm">{feature.description}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </section>
+          )
+        }
+
+        <!-- Gallery -->
+        {
+          galleryImgs.length > 0 && (
+            <section class="mb-20">
+              <h2 class="text-3xl font-bold mb-10">
+                <span class="font-kablamo text-ppink">G</span>allery
+              </h2>
+              <div class="grid md:grid-cols-2 gap-6">
+                {galleryImgs.map((img) => (
+                  <div class="rounded-3xl border-1 border-black shadow-card overflow-hidden group hover:shadow-hover transition">
+                    <Picture
+                      src={img}
+                      alt="Gallery"
+                      class="w-full h-64 object-cover group-hover:scale-105 transition duration-500"
+                      format="webp"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                      widths={[400, 600, 800]}
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+          )
+        }
+
+        <!-- Specs table -->
+        {
+          specs.length > 0 && (
+            <section class="mb-20">
+              <h2 class="text-3xl font-bold mb-10">
+                <span class="font-kablamo text-ppink">S</span>pecs
+              </h2>
+              <div class="rounded-3xl border-1 border-black shadow-card overflow-hidden">
+                <table class="w-full text-left">
+                  <tbody>
+                    {specs.map((spec, i) => (
+                      <tr class={`border-b border-black/10 last:border-0 ${i % 2 === 0 ? 'bg-white/50' : ''}`}>
+                        <td class="px-6 py-4 font-semibold text-pblack w-1/3">{spec.label}</td>
+                        <td class="px-6 py-4">{spec.value}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </section>
+          )
+        }
+
+        <!-- CTA -->
+        {
+          link && (
+            <div class="text-center mb-20">
+              <a
+                href={link}
+                target="_blank"
+                class="inline-block bg-ppink text-black font-bold px-10 py-4 rounded-2xl border-1 border-black shadow-card hover:shadow-hover transition text-lg"
+              >
+                了解更多
+              </a>
+            </div>
+          )
+        }
+      </div>
+    </main>
+    <Footer />
+  </body>
+</html>

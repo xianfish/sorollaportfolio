@@ -1,0 +1,24 @@
+/* CMS 预览样式 — 模仿前台基础风格 */
+@import url('/fonts/Alexandria-Regular.woff2');
+
+body {
+  font-family: 'Alexandria', sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  padding: 2rem;
+  max-width: 720px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+h1 { font-size: 2rem; font-weight: 700; }
+h2 { font-size: 1.5rem; font-weight: 600; margin-top: 1.5rem; }
+h3 { font-size: 1.2rem; font-weight: 600; }
+p { margin: 0.5rem 0; }
+img { max-width: 100%; border-radius: 0.75rem; }
+a { color: #F396E5; }
+code { background: #eee; padding: 0.15em 0.4em; border-radius: 0.25em; }
+pre { background: #1a1a2e; color: #f2f2f2; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; }
+blockquote { border-left: 3px solid #F396E5; margin-left: 0; padding-left: 1rem; color: #666; }
+table { width: 100%; border-collapse: collapse; }
+td, th { border: 1px solid #ddd; padding: 0.5rem 0.75rem; }

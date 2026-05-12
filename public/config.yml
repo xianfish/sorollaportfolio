@@ -1,0 +1,82 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend:
+  url: http://localhost:8081/api/v1
+
+media_folder: "src/assets"
+public_folder: "/src/assets"
+
+collections:
+  - name: "blog"
+    label: "博客文章"
+    label_singular: "文章"
+    folder: "src/content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "标题", name: "title", widget: "string", required: true }
+      - { label: "描述", name: "description", widget: "text", required: true }
+      - { label: "图标", name: "icon", widget: "select", required: true,
+          options: ["1", "2", "3", "4", "5", "beach", "paint", "web", "github", "linkedin"] }
+      - { label: "发布日期", name: "pubDate", widget: "datetime", required: true,
+          format: "MMM DD YYYY", date_format: "MMM DD YYYY", time_format: false }
+      - { label: "更新日期", name: "updatedDate", widget: "datetime", required: false,
+          format: "MMM DD YYYY", date_format: "MMM DD YYYY", time_format: false }
+      - { label: "头图", name: "heroImage", widget: "image", required: false,
+          default: "/src/assets/fran.webp" }
+      - { label: "标签", name: "tags", widget: "list", required: false, default: [] }
+      - { label: "正文", name: "body", widget: "markdown", required: false }
+
+  - name: "products"
+    label: "产品"
+    label_singular: "产品"
+    folder: "src/content/products"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    format: "frontmatter"
+    fields:
+      - { label: "产品名称", name: "title", widget: "string", required: true }
+      - { label: "产品描述", name: "description", widget: "text", required: true }
+      - { label: "分类", name: "category", widget: "string", required: true }
+      - { label: "发布日期", name: "pubDate", widget: "datetime", required: true,
+          format: "MMM DD YYYY", date_format: "MMM DD YYYY", time_format: false }
+      - { label: "头图", name: "heroImage", widget: "image", required: false }
+      - label: "图片画廊"
+        name: "gallery"
+        widget: "list"
+        required: false
+        default: []
+        field: { label: "图片", name: "image", widget: "image" }
+      - label: "产品特性"
+        name: "features"
+        widget: "list"
+        required: false
+        default: []
+        fields:
+          - { label: "图标", name: "icon", widget: "select",
+              options: ["1", "2", "3", "4", "5", "beach", "paint", "web"] }
+          - { label: "特性标题", name: "title", widget: "string" }
+          - { label: "特性描述", name: "description", widget: "text" }
+      - label: "规格参数"
+        name: "specs"
+        widget: "list"
+        required: false
+        default: []
+        fields:
+          - { label: "参数名", name: "label", widget: "string" }
+          - { label: "参数值", name: "value", widget: "string" }
+      - { label: "外部链接", name: "link", widget: "string", required: false }
+      - { label: "正文", name: "body", widget: "markdown", required: false }
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
+site_url: https://sorollaportfolio.netlify.app
+display_url: https://sorollaportfolio.netlify.app
