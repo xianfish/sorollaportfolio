@@ -9,9 +9,9 @@ set -euo pipefail
 IP="${1:?请提供公网IP，例如: ./deploy/setup.sh 1.2.3.4}"
 PROJECT_DIR="${2:-$HOME/sorolla}"
 
-echo "=== 1. 修复 Docker 权限 ==="
-sudo usermod -aG docker "$USER"
-echo "权限已添加，如果 docker 命令仍报权限错误，请退出 SSH 重新登录。"
+#echo "=== 1. 修复 Docker 权限 ==="
+#sudo usermod -aG docker "$USER"
+#echo "权限已添加，如果 docker 命令仍报权限错误，请退出 SSH 重新登录。"
 
 echo ""
 echo "=== 2. 克隆项目（如尚未克隆） ==="

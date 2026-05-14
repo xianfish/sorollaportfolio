@@ -2,8 +2,8 @@ FROM node:22-alpine AS build
 WORKDIR /app
 ARG SITE_URL
 ENV SITE_URL=${SITE_URL}
-COPY package.json package-lock.json ./
-RUN npm ci
+COPY package.json ./
+RUN npm install
 COPY . .
 RUN npm run build
 
